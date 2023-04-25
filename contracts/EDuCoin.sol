@@ -1,6 +1,5 @@
 // SPDX-License-Identifier: MIT
 pragma solidity 0.8.17;
-
 import {ERC20Storage} from "@animoca/ethereum-contracts/contracts/token/ERC20/libraries/ERC20Storage.sol";
 import {IForwarderRegistry} from "@animoca/ethereum-contracts/contracts/metatx/interfaces/IForwarderRegistry.sol";
 import {ERC20} from "@animoca/ethereum-contracts/contracts/token/ERC20/ERC20.sol";
@@ -15,18 +14,8 @@ import {Context} from "@openzeppelin/contracts/utils/Context.sol";
 import {ForwarderRegistryContextBase} from "@animoca/ethereum-contracts/contracts/metatx/base/ForwarderRegistryContextBase.sol";
 import {ForwarderRegistryContext} from "@animoca/ethereum-contracts/contracts/metatx/ForwarderRegistryContext.sol";
 
-contract EDuCoin is
-    ERC20,
-    ERC20Detailed,
-    ERC20Metadata,
-    ERC20Permit,
-    ERC20SafeTransfers,
-    ERC20BatchTransfers,
-    TokenRecovery,
-    ForwarderRegistryContext
-{
+contract EDuCoin is ERC20, ERC20Detailed, ERC20Metadata, ERC20Permit, ERC20SafeTransfers, ERC20BatchTransfers, TokenRecovery, ForwarderRegistryContext {
     using ERC20Storage for ERC20Storage.Layout;
-
     constructor(
         string memory tokenName,
         string memory tokenSymbol,
@@ -41,6 +30,7 @@ contract EDuCoin is
         ForwarderRegistryContext(forwarderRegistry)
         ContractOwnership(msg.sender)
     {
+        
         ERC20Storage.layout().batchMint(recipients, amounts);
     }
 
