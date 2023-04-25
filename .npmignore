@@ -1,0 +1,50 @@
+# Same content as .gitignore + other files not to pack
+
+# not in .gitignore
+audit/
+
+# npm
+node_modules/
+.npmrc*
+
+# yarn
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+.pnp.*
+
+# yalc
+.yalc
+yalc.lock
+
+# vscode
+.vscode/*
+!.vscode/settings.json.default
+!.vscode/launch.json.default
+!.vscode/extensions.json.default
+
+# env
+.env*
+!.env.example
+
+# solc
+cache/
+artifacts/*
+!artifacts/contracts/
+!artifacts/build-info/
+
+# solidity-coverage
+coverage/
+coverage.json
+*.coverage/
+
+# solidity-docgen
+docs/
+
+# hardhat plugins
+flattened*
+hardhat.config.last.json
+
+# misc
+*.log
+.DS_Store
