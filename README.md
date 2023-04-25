@@ -6,7 +6,7 @@ This project contains the solidity contract for the OpenCampus EDU Token.
 
 | Date       | Scope            | Commit                                                                                                                          | Auditor                                  | Report                                                       |
 | ---------- | ---------------- | ------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- | ------------------------------------------------------------ |
-| 17/03/2023 | EDC ERC-20 Token | [6fd45c2db3a1e41113135151814bcbc9e618f1f0](https://github.com/opencampus-xyz/EDU-smart-contract/blob/main/contracts/EDuCoin.sol) | [Solidified](https://www.solidified.io/) | [link](/audits/Audit_Report_EDUCoin.pdf) |
+| 17/03/2023 | EDC ERC-20 Token | [6fd45c2db3a1e41113135151814bcbc9e618f1f0](https://github.com/opencampus-xyz/EDU-smart-contract/blob/main/contracts/EDuCoin.sol) | [Solidified](https://www.solidified.io/) | [link](/audits/Audit-Report-EDuCoin.pdf) |
 
 ## Solidity contracts
 
